@@ -1,0 +1,95 @@
+.sidebar {
+
+    float: left;
+    width: 250px;
+    padding: 10px 10px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.sidebar-wraper {
+
+    padding-bottom: 200px;
+}
+
+.sidebar-menu {
+
+    margin: 20px 0;
+    color: rgb(190, 190, 190);
+}
+
+.sidebar-logo img {
+
+    max-width: 250px;
+    width: 100%;
+}
+
+.sidebar-menu a {
+
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.sidebar-menu svg {
+
+    margin: 0 20px;
+}
+
+.sidebar-menu a.sidebar-menu-selected {
+
+    color: white;
+    background-color: rgb(80, 80, 80);
+    border-radius: 5px;
+}
+
+.sidebar-menu-item {
+
+    margin-top: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.sidebar-menu p.sidebar-menu-title {
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.sidebar-menu-item #link {
+
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.sidebar-menu-item img {
+
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.sidebar-playlists {
+
+    padding: 10px 10px;
+    border-top: 1px solid rgb(40, 40, 40);
+}
+
+.sidebar-playlists a {
+
+    margin: 15px 0;
+    display: block;
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+}
+
+.sidebar-playlists a:hover {
+
+    color: white;
+}
