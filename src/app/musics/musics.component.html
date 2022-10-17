@@ -1,3 +1,12 @@
-<p>
-  musics works!
-</p>
+<div class="main-row">
+    <div class="main-row-title">
+        <h2>Músicas</h2>
+    </div>
+    <div *ngFor="let item of [].constructor(4)">
+        <div id="main-col-music" class="main-col">
+            <img src="assets/images/{{item.image}}.jpg"/>
+            <h3>{{item.name}}</h3>
+            <p>{{item.artist.name}}</p>
+        </div>
+    </div>
+</div>
