@@ -1,4 +1,4 @@
-import { Artist } from "./Artist";
+import { Album } from "./Album";
 import { Genre } from "./Genre";
 
 export class Music {
@@ -10,7 +10,7 @@ export class Music {
         this.release = '';
         this.audio = '';
         this.genre = new Genre();
-        this.artist = new Artist();
+        this.album = new Album();
     }
 
     id: number;
@@ -18,5 +18,5 @@ export class Music {
     release: string;
     audio: string;
     genre: Genre;
-    artist: Artist
+    album: Album
 }

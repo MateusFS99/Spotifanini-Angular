@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -15,7 +15,11 @@ export class MusicService {
 
     getAll(): Observable<Music[]> {
 
-        return this.http.get<Music[]>(`${this.baseURL}`);
+        return this.http.get<Music[]>(`${this.baseURL}`, {headers: new HttpHeaders({
+
+            'Authorization': `Bearer ${localStorage.getItem("token")}`,
+            'Content-Type': 'application/json'
+        })});
     }
 
     getById(id: number): Observable<Music> {

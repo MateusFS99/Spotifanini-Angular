@@ -2,11 +2,11 @@
     <div class="main-row-title">
         <h2>Músicas</h2>
     </div>
-    <div *ngFor="let item of [].constructor(4)">
+    <div *ngFor="let music of musics">
         <div id="main-col-music" class="main-col">
-            <img src="assets/images/{{item.image}}.jpg"/>
-            <h3>{{item.name}}</h3>
-            <p>{{item.artist.name}}</p>
+            <img src="assets/images/{{music.album.image}}.jpg"/>
+            <h3>{{music.name}}</h3>
+            <p>{{music.album.artist.name}}</p>
         </div>
     </div>
 </div>
